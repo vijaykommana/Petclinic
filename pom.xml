@@ -81,18 +81,7 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
-     <distributionManagement>
-    <repository>
-      <id>maven-releases</id>
-      <name>maven-releases</name>
-      <url>http://13.126.22.224:8081/repository/maven-releases/</url>
-    </repository>
-    <snapshotRepository>
-      <id>maven-snapshots</id>
-      <name>maven-snapshots</name>
-      <url>http://13.126.22.224:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
-    <dependencyManagement>
+    
         <dependencies>
             <dependency>
                 <groupId>com.fasterxml.jackson</groupId>
@@ -567,5 +556,16 @@
   <url>http://13.126.22.224:8081/repository/maven-releases/</url>
 </repository>
     </repositories>
-
+ <distributionManagement>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://13.126.22.224:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://13.126.22.224:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
+    <dependencyManagement>
 </project>
