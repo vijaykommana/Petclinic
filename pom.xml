@@ -81,7 +81,17 @@
         <docker.image.prefix>springcommunity</docker.image.prefix>
 
     </properties>
-
+     <distributionManagement>
+    <repository>
+      <id>maven-releases</id>
+      <name>maven-releases</name>
+      <url>http://13.126.22.224:8081/repository/maven-releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven-snapshots</id>
+      <name>maven-snapshots</name>
+      <url>http://13.126.22.224:8081/repository/maven-snapshots/</url>
+    </snapshotRepository>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -551,6 +561,11 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
+         <repository>
+  <id>maven-releases</id>
+  <name>maven-releases</name>
+  <url>http://13.126.22.224:8081/repository/maven-releases/</url>
+</repository>
     </repositories>
 
 </project>
